@@ -1,5 +1,8 @@
-marks = float(input("please enter marks : "))
-percentage = (marks/100)*100
+a=int(input("enter marks: "))
+b=int(input("enter marks: "))
+c=int(input("enter marks: "))
+percentage =((a+b+c)/300)*100
+print(percentage)
 if percentage>=90:
     print("grade A")
     print("your percentage is "+str(percentage))
