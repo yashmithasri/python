@@ -8,14 +8,22 @@ elif b>c:
     if b>a:
         print("b is greater")
 else:
-    print("c is greater ")    
-#if a>b:
-#    if a>c: 
-#      print("a ")
-#else:
-#print("c")
-#if b>c:
-#if b>a:
-#print("b")
-#else:
-#print("c")
+    print("c is greater ")   
+    
+    
+    
+    
+a=int(input("enter the 1st number"))
+b=int(input("enter the 2nd number"))
+c=int(input("enter the 3rd number"))
+if a>b :
+    if a>c:
+        print("a is  max")
+    else :
+        print("c is max")
+if b>c:
+    if b>a:
+        print("b is max")
+    else :
+        print("c is max")
+
