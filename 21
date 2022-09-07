@@ -1,0 +1,8 @@
+a=int(input("enter a number"))
+b=int(input("enter another number"))
+for i in range(a,b):
+    for j in range(2,a):
+        if i%j==0:
+            break
+    else:
+        print(i)  
