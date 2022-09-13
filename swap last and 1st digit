@@ -1,0 +1,15 @@
+def swap(n):
+    string1=str(n)
+    l=[i for i in string1]
+    
+    temp=l[0]
+    l[0]=l[3]
+    l[-1]=temp
+    temp1=l[1]
+    l[1]=l[2]
+    l[2]=temp1
+    string2="".join(l)
+    return int(string2)
+num=int(input("enter a number"))
+print(f"before swap is:{num}")
+print(f"after swap is :{swap(num)}")
