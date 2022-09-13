@@ -1,0 +1,7 @@
+def sum(n):
+    pi=3.14
+    area= 3.14 *n*n
+    
+    print("area of circle with raidus is ",area)
+r=float(input())
+sum(r)
