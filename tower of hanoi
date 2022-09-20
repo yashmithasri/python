@@ -1,0 +1,11 @@
+def hanoi(n,sour,dest,mid):
+    if n<1:
+        print("Please print a positive number")
+    elif(n==1):
+        print(f"move disk {n} from {sour} to {dest}")
+    else:
+        hanoi(n-1,sour,mid,dest)
+        print(f"move disk {n} from {sour} to {dest}")
+        hanoi(n-1,mid,dest,sour)
+n=int(input())
+hanoi(n,"a","c","b")  
