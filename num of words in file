@@ -1,0 +1,5 @@
+f=open("abc.txt","r")
+data=f.read()
+line=data.split()
+st=len(line)
+print(st)
