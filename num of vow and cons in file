@@ -1,0 +1,11 @@
+vow=0
+cons=0
+f=open("abc.txt","r")
+data=f.read()
+for i in data:
+    if(i=='a'or i=='e' or i=='i' or i=='o' or i=='u'):
+        vow= vow+1
+    else:
+        cons=cons+1
+print(vow)
+print(cons)
