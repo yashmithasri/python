@@ -1,0 +1,13 @@
+a=input()
+f=open(a,"w")
+f.write("hiiiiiiiiiii")
+f=open(a,"r")
+data=f.read().replace(" ","")
+d={}
+count=0
+for i in data:
+    if i in d:
+       count+1
+    else:
+       d[i]=1
+print(d)       
