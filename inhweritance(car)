@@ -1,0 +1,17 @@
+class car:
+    def __init__(self,model,speed,price,bullets):
+        self.model=model
+        self.speed=speed
+        self.price=price
+        self.bullets=bullets
+    def show(self):
+        print("model:",self.model)
+        print("speed:",self.speed)
+        print("price:",self.price)
+class firingcar(car):
+    def fire(self):
+        print("its firing")
+        print("bullets:",self.bullets)
+c=firingcar("bmw555",300,5000000,88)
+c.show()
+c.fire()
