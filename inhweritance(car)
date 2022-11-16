@@ -1,17 +1,25 @@
 class car:
-    def __init__(self,model,speed,price,bullets):
+    def __init__(self,model,speed,price):
         self.model=model
         self.speed=speed
         self.price=price
         self.bullets=bullets
-    def show(self):
-        print("model:",self.model)
-        print("speed:",self.speed)
-        print("price:",self.price)
+    
+        
 class firingcar(car):
+    def __init__(self,model,speed,price,bullets):
+        super().__init__(model,speed,price)
+        self.bullets=bullets
     def fire(self):
         print("its firing")
         print("bullets:",self.bullets)
-c=firingcar("bmw555",300,5000000,88)
-c.show()
+        print("model:",self.model)
+        print("speed:",self.speed)
+        print("price:",self.price)
+model=input("model:")
+speed=input("speed:")
+price=input("price:")
+bullets=input("bullets:")
+c=firingcar(model,speed,price,bullets)
+
 c.fire()
